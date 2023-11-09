@@ -1,0 +1,84 @@
+{
+  "envs": ["node", "es2022"],
+  "space": 2,
+  "semicolon": false,
+  "prettier": true,
+  "rules": {
+    "import/extensions": "off",
+    "import/order": [
+      "error",
+      {
+        "alphabetize": { "order": "asc", "orderImportKind": "asc", "caseInsensitive": true }
+      }
+    ],
+    "n/file-extension-in-import": "off",
+    "new-cap": [
+      "error",
+      {
+        "capIsNewExceptions": [
+          "ReadonlyOptional",
+          "Readonly",
+          "Optional",
+          "Any",
+          "Array",
+          "Boolean",
+          "Capitalize",
+          "Composite",
+          "Enum",
+          "Extends",
+          "Exclude",
+          "Extract",
+          "Index",
+          "Integer",
+          "Intersect",
+          "KeyOf",
+          "Literal",
+          "Lowercase",
+          "Never",
+          "Not",
+          "Null",
+          "Number",
+          "Object",
+          "Omit",
+          "Partial",
+          "Pick",
+          "Record",
+          "Recursive",
+          "Ref",
+          "Required",
+          "Rest",
+          "String",
+          "TemplateLiteral",
+          "Transform",
+          "Tuple",
+          "Uncapitalize",
+          "Union",
+          "Unknown",
+          "Unsafe",
+          "Uppercase"
+        ]
+      }
+    ],
+    "no-console": "error",
+    "unicorn/prefer-module": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "rules": {
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "variableLike",
+            "format": ["strictCamelCase", "UPPER_CASE", "PascalCase"],
+            "leadingUnderscore": "allow"
+          }
+        ]
+      }
+    }
+  ],
+  "parserOptions": {
+    "project": "tsconfig.json"
+  },
+  "ignore": [".data", ".data/**/*"]
+}

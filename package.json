@@ -1,0 +1,16 @@
+{
+  "name": "xo-eaccess-permission-denied-on-ignored-dir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "xo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.0.3",
+    "xo": "0.56.0"
+  }
+}
